@@ -83,7 +83,35 @@ git config --local -e
 git init
 ```
 
+### Agrego archivos al stage area o index
+```sh
+git add <nombre-archivo>
+git add . # para agregar todos los archvios
+git add *.exe # para agregar los archivos que terminan en .exe
+git add *.js # para agregar los archivos que terminan en .js
+```
 
+### Puedo hacer un commit (saco foto/snapshot)
+```sh
+git commit # me abre el editor por defecto que tengo configurado
+git commit -m "mensaje descritivo de lo que contiene el commit"
+```
+
+### Ver la historia, listar commits
+```sh
+git log # para mostrar los log de forma detallada
+git log --oneline # para mostrar los log de forma resumida
+```
+
+### Para quitar del stage area un archivo 
+```sh
+git rm --cache <nombre-archivo>
+```
+
+### Para ver las diferencias entre el working directory contra lo que tengo en el repo
+```sh
+git diff <nombre-archivo>
+```
 
 
 
