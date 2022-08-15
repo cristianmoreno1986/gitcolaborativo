@@ -113,6 +113,21 @@ git rm --cache <nombre-archivo>
 git diff <nombre-archivo>
 ```
 
+### Setencia para vincular al github
+```sh
+git remote add origin https://github.com/cristianmoreno1986/gitcolaborativo.git
+```
+
+### Setencia para enviar a github
+```sh
+git push -u origin master
+```
+
+### Setencia para enviar despues de la primera vez a github
+```sh
+git push
+```
+
 
 
 
