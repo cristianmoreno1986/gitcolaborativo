@@ -40,7 +40,47 @@ git log --before="2022-07-08" # Pata buscar antes de una fecha determinada
 git log --since"<Fecha>" --before="<Fecha>" --oneline -4 # Para busquedas combinadas
 ```
 
+<<<<<<< Updated upstream
 <br>
+=======
+# GIT STASH
+Es una pila que almacena el working directory
+Permite almacenar el working directory para seguir trabajar
+Los stash que creo solo están en la copia local
+
+### Creo un stash
+```sh
+git stash
+```
+
+### Ver los stash
+```sh
+git stash list
+```
+
+### Recuperar el ultimo stash
+```sh
+git stash pop
+```
+
+### Para borrar un stash
+> Borrar el último stash
+```sh
+git stash drop
+```
+
+>Borrar un stash particular
+```sh
+git stash drop  stash@{0}
+```
+
+### Aplicar cualquier stash de los que tengo
+```sh
+git stash apply stash@{1}
+```
+
+
+>>>>>>> Stashed changes
 
 # GIT BRANCH
 ### Para crear una rama
