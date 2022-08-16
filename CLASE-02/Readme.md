@@ -40,6 +40,30 @@ git log --before="2022-07-08" # Pata buscar antes de una fecha determinada
 git log --since"<Fecha>" --before="<Fecha>" --oneline -4 # Para busquedas combinadas
 ```
 
+<br>
 
+# GIT BRANCH
+### Para crear una rama
+```sh
+git branch <nombre-rama>
+```
 
+### Listar ramas
+```sh
+git branch
+```
 
+### Para cambiar de rama
+```sh
+git switch <nombre-rama>
+```
+
+### Para eliminar una rama
+```sh
+git branch -d <nombre-rama>
+```
+
+### Para forzar la eliminación de una rama
+```sh
+git branch -D <nombre-rama>
+```
