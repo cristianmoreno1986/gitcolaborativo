@@ -68,6 +68,7 @@ git config --global core.editor "nano"
 ### Cofiguración GIT mostrar
 ```sh
 git config --list
+git config --list --show-origin
 ```
 
 ### Configuración GIT modificar en el editor
@@ -89,12 +90,14 @@ git add <nombre-archivo>
 git add . # para agregar todos los archvios
 git add *.exe # para agregar los archivos que terminan en .exe
 git add *.js # para agregar los archivos que terminan en .js
+git add -i # para agregar los archivos y mostrar mucho mas detalle
 ```
 
 ### Puedo hacer un commit (saco foto/snapshot)
 ```sh
 git commit # me abre el editor por defecto que tengo configurado
 git commit -m "mensaje descritivo de lo que contiene el commit"
+git commit -amend # para sobreescribir el último commit
 ```
 
 ### Ver la historia, listar commits
